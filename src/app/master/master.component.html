@@ -1,0 +1,7 @@
+<h1>Master</h1>
+
+<ul [@listStagger]="master$">
+  <li *ngFor="let mas of master$">
+    <a routerLink="">{{ mas.title }}</a>
+  </li>
+</ul>

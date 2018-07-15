@@ -1,0 +1,7 @@
+<h1>Music</h1>
+
+<ul [@listStagger]="music$">
+  <li *ngFor="let mus of music$">
+    <a routerLink="">{{ mus.title }}</a>
+  </li>
+</ul>

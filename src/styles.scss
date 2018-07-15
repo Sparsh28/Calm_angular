@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    background: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 70px auto;
+    height: 100%;
+
+   #content {
+        padding: 0px 50px 50px;
+       ul {
+           list-style-type: none;
+           margin:0;padding:0;
+       
+           li {
+               background: #fff;
+               border-radius: 8px;
+               padding: 20px;
+               margin-bottom: 8px;
+               width: 44%;
+               display: inline-block;
+               margin: 0 10px 10px;
+       
+               a {
+                   font-size: 1.5em;
+                   text-decoration: none;
+                   font-weight: bold;
+                   color:#00A8FF;
+               }
+       
+               ul {
+                   margin-top: 20px;
+                   
+                   li {
+                       padding:0;
+       
+                       a {
+                           font-size: 1em;
+                           font-weight: 300;
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
+
+@media only screen and (max-width: 1200px) {
+    #container #content ul li{
+        width: 42%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    #container #content ul li{
+        width: 39%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #container{
+        grid-template-columns: 10px auto;
+    }
+    h1{
+        font-size: 14px;
+        text-align: center;
+    }
+    #container #content {
+        padding: 0;
+    }
+    #container #content ul{
+        padding: 10px 0 0;
+    }
+    #container #content ul li{
+        width: 43%;
+        border-radius: 4px;
+        padding: 5px;
+        margin-bottom: 5px;
+        margin: 0 3px 3px;
+    }
+    #container #content ul li a{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,8 @@
+<h1>Sleep</h1>
+
+<ul [@listStagger]="sleep$">
+  <li *ngFor="let sl of sleep$">
+    <a routerLink="">{{ sl.title }}</a>
+  </li>
+</ul>
+  

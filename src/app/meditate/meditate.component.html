@@ -1,0 +1,7 @@
+<h1>Meditate</h1>
+
+<ul [@listStagger]="meditate$">
+  <li *ngFor="let med of meditate$">
+    <a routerLink="">{{ med.title }}</a>
+  </li>
+</ul>

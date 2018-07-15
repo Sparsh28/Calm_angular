@@ -1,0 +1,31 @@
+:host {
+    background: #1a2580;
+    color: #fff;
+    position: fixed;
+    left: auto;
+    top: 80px;
+    left: -130px;
+    bottom: 0;
+    min-width: 130px;
+    z-index: 2;
+}
+
+ul {
+    font-size: 18px;
+    line-height: 3;
+    list-style: none;
+}
+
+@media only screen and (max-width: 767px) {
+    :host{
+        left: -70px;
+        min-width: 34px;
+        padding: 0 18px;
+        top: 35px;
+    }
+    ul{
+        font-size: 14px;
+        line-height: 2;
+        padding: 0;
+    }
+}

@@ -1,0 +1,62 @@
+.hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 65px;
+  height: 30px;
+  font-size: 0;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: 0;
+  top: -70px;
+}
+  
+  
+.hamburger span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 18px;
+  right: 18px;
+  height: 2px;
+  background: #000000;
+  z-index: 10;
+}
+  
+.hamburger span::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  content: "";
+  z-index: 10;
+  top: -20px;
+}
+
+.hamburger span::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  content: "";
+  bottom: -20px;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 767px) {
+  .hamburger{
+    width: 50px;
+    top: -100px;
+  }
+  .hamburger span::before{
+    top: -5px;
+  }
+}

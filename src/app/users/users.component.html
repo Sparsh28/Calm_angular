@@ -1,0 +1,17 @@
+<h1>Home</h1>
+
+<ul [@listStagger]="users$">
+  <li *ngFor="let user of users$">
+    <a routerLink="">{{ user.title }}</a>
+    <div id="video">
+      <vg-player>
+        <vg-controls>
+          <vg-play-pause></vg-play-pause>
+        </vg-controls>
+        <video [vgMedia]="media" #media id="singleVideo" preload="auto" crossorigin>
+          <source src="{{ user.video }}" type="video/mp4">
+        </video>
+      </vg-player>
+    </div>
+  </li>
+</ul>
